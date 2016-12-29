@@ -1,0 +1,110 @@
+/*General*/
+h1, h2, h3, h4, h5, p { margin: 0 }
+h3 { padding: 20px 0; color: #295E94; max-width: 70% }
+.bg-blue { background-color: #295E94 }
+.bg-white { background-color: white }
+.content-wrapper { background-color: aliceblue; padding: 0 25px; position: relative }
+.justify-center { justify-content: center}
+
+/*Button*/
+.viewall { position: absolute; right: 25; top: 15; padding: 5px 20px; border-radius: 5px; border: 3px solid #d64309; color: #d64309; transition: all 0.05s ease-in-out }
+.viewall > p { font-weight: 600; }
+.viewall:hover { background-color: #d64309; color:white }
+.readmore { border-radius: 5px; width: 120px; text-align: center; padding: 5px; color: white; background-color: #D44205 }
+
+
+/*Header*/
+#govcert-logo { padding: 30px 0; display: block; max-width: 85% }
+
+/*Footer*/
+footer { height: 200px }
+
+
+/*nav*/
+nav { background-color: #D44205; margin: 0; }
+ul { list-style: none; display: flex; padding: 0; margin: 0 }
+ul > li { margin-right: 20px; padding: 10px 10px; color: white; transition: all 0.2s ease-in-out }
+li:hover { background-color: #1f497d }
+#top-nav { float: left; align-items: center }
+.text-tools { display: flex; align-items: baseline; float: right }
+.text-tools > p { padding: 8px 5px; color: white }
+
+
+/*Ham Nav*/
+.bubble-wrap { margin-left: auto; margin-right: 20px; display: none }
+.bar {
+	background-color: #295e94;
+	width: 30px;
+	height: 4px;
+	border-radius: 5px;
+	margin: 5px 0;
+}
+
+
+/*Alerts & Advisory*/
+.card-holder { border: 1px solid rgba(0,0,0,0.1); margin-bottom: 30px; transition: all 0.3s cubic-bezier(0.76, 0.17, 0.25, 0.80); overflow: hidden }
+.card-holder:hover { box-shadow: 0 4px 3px rgba(0,0,0,0.15)}
+.pic-holder { height: 110px; overflow:hidden; border-top: 10px solid #D44205; }
+.pic-holder .img{ height: 110px; background: url(img/alerts-oracle.jpg); background-size: cover; background-position: center; transition: all 0.3s cubic-bezier(0.76, 0.17, 0.25, 0.80) }
+.card-holder:hover .pic-holder .img { transform: scale(1.05); }
+.alert-holder { padding: 15px 15px 5px 15px; background-color: white}
+.security-title { color: #D44205; font-weight: 600; margin-bottom: 5px; font-size: 12px; }
+.alert-holder > .date { font-size: 12px; text-align: right; margin-top: 20px }
+
+
+/*Security Trends*/
+.trend-card-holder { height: 240px; background: url(img/hack.png); background-size: cover; background-position: center; margin-bottom: 30px }
+.trend-holder { padding: 35px 35px }
+.trend-title { color: white; font-size: 24px; line-height: 1.1; margin: 10px 0 15px 0 }
+.trend-type { color: dodgerblue; text-transform: uppercase }
+
+
+
+/*Promotion & Education*/
+.pic-holder-2 { border-top: 10px solid #D44205; }
+.pic-holder-2 > img { width: 100%; display: block }
+.event-row{ overflow:hidden; background-color: white }
+.event-date { background-color: #D44205; float:left; width:25%; padding: 15px; position: relative }
+.event-date > p { text-align: center; color: white }
+.event-more { position: absolute; bottom: 0; left: 0; right: 0; font-size: 12px; padding: 5px 0; border-top: 1px solid white }
+.day { font-size: 40px; line-height: 1 }
+.month { padding-bottom: 30px }
+.event-content { background-color: white; float: right; width:75%; padding: 15px 15px 0 }
+.event-type { line-height: 1; font-weight: 700; font-size: 12px; color: #D44205; margin-bottom: 5px  }
+
+
+/*Media query for screen size smaller than or equal to 992px && larger than 768px*/
+@media (max-width: 992px) {
+	.event-date { width: 35% }
+	.event-content { width: 65% }
+	.bubble-wrap { display: block }
+	#top-nav { display: none }
+}
+
+/*Media query for screen size smaller than or equal to 768px && larger than 525px*/
+@media (max-width: 768px) {
+	.event-date { width: 25% }
+	.event-content { width: 75% }
+	.text-tools > p { padding: 5px 5px }
+	.bottom-nav { flex-direction: column }
+	.bottom-nav > li { border-bottom: 1px solid white; width: 100% }
+}
+
+/*Media query for screen size smaller than or equal to 525px*/
+@media (max-width: 525px) {
+	.col-xxs-12 { 
+		width: 100%;
+		float:left;
+		position: relative;
+    	min-height: 1px;
+    	padding-right: 15px;
+    	padding-left: 15px;
+	}
+	
+	.viewall { padding: 5px 10px; border-radius: 5px; border: 3px solid #d64309; color: #d64309; }
+	.viewall > p { font-size: 12px }
+	.event-date { width: 35% }
+	.event-content { width: 65% }
+	
+}
+
