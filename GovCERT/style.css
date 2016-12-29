@@ -87,7 +87,7 @@ li:hover { background-color: #1f497d }
 	.event-content { width: 75% }
 	.text-tools > p { padding: 5px 5px }
 	.bottom-nav { flex-direction: column }
-	.bottom-nav > li { border-bottom: 1px solid white; width: 100% }
+	.bottom-nav > li { border-bottom: 1px solid white; width: 100%; padding: 20px 10px }
 }
 
 /*Media query for screen size smaller than or equal to 525px*/
