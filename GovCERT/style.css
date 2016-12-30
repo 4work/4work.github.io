@@ -7,6 +7,7 @@ h3 { padding: 20px 0; color: #295E94; max-width: 70% }
 .content-wrapper { padding: 0 25px; position: relative }
 .justify-center { justify-content: center }
 
+
 /*Button*/
 .viewall { position: absolute; right: 25; top: 15; padding: 5px 20px; border-radius: 5px; border: 3px solid #d64309; color: #d64309; transition: all 0.05s ease-in-out }
 .viewall > p { font-weight: 600; }
@@ -16,6 +17,7 @@ h3 { padding: 20px 0; color: #295E94; max-width: 70% }
 
 /*Header*/
 #govcert-logo { padding: 30px 0; display: block; max-width: 85% }
+
 
 /*Footer*/
 footer { height: 200px }
@@ -58,7 +60,6 @@ li:hover { background-color: #1f497d }
 .trend-holder { padding: 35px 35px }
 .trend-title { color: white; font-size: 24px; line-height: 1.1; margin: 10px 0 15px 0 }
 .trend-type { color: dodgerblue; text-transform: uppercase }
-
 
 
 /*Promotion & Education*/
@@ -106,6 +107,5 @@ li:hover { background-color: #1f497d }
 	.viewall > p { font-size: 12px }
 	.event-date { width: 35% }
 	.event-content { width: 65% }
-	
 }
 
